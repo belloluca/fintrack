@@ -1,59 +1,103 @@
-# Fintrack
+# FinTrack
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+FinTrack is a personal finance dashboard designed to help users track their income, expenses, budgets, and overall financial activity through a simple and accessible interface.
 
-## Development server
+The project is primarily focused on building a professional frontend application with Angular and integrating it with a REST API.
 
-To start a local development server, run:
+## Project Status
+
+🚧 **In development**
+
+The initial Angular project setup and repository configuration have been completed. The financial management features described below are planned and will be implemented incrementally.
+
+## Planned MVP Features
+
+* View total balance, income, and expenses
+* View a complete transaction list
+* Create, edit, and delete transactions
+* Search and filter transactions
+* Organize transactions by category
+* Set monthly budgets for expense categories
+* View budget usage and remaining amounts
+* Handle loading, empty, and error states
+* Use a responsive and accessible interface
+
+## Future Improvements
+
+* Financial charts and monthly reports
+* Recurring transactions
+* Savings-rate statistics
+* User authentication
+* Multiple user profiles
+* Dark mode
+* Secure bank-account integration through an authorized Open Banking provider
+
+## Technology Stack
+
+* Angular 22
+* TypeScript
+* SCSS
+* RxJS
+* Angular Router
+* Angular Signals
+* Typed Reactive Forms
+* REST API
+* Vitest
+
+## Getting Started
+
+### Prerequisites
+
+Make sure that Node.js and npm are installed on your computer.
+
+### Installation
+
+Clone the repository:
 
 ```bash
-ng serve
+git clone https://github.com/belloluca/fintrack.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Move into the project directory:
 
 ```bash
-ng generate component component-name
+cd fintrack
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Install the project dependencies:
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
+### Development Server
 
-To build the project run:
+Start the development server:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Open `http://localhost:4200/` in your browser.
 
-## Running unit tests
+### Production Build
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Create a production build:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The generated files will be stored in the `dist/` directory.
 
-For end-to-end (e2e) testing, run:
+### Tests
+
+Run the automated tests:
 
 ```bash
-ng e2e
+npm test
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Purpose
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+FinTrack is being developed as a portfolio project to practise professional Angular development, application architecture, REST API integration, state management, form validation, testing, accessibility, and responsive design.

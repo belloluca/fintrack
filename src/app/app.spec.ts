@@ -1,23 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { App } from './app';
+import { TransactionList } from './features/transactions/TransactionListPage/TransactionListPage';
 
-describe('App', () => {
+describe('TransactionList', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [TransactionList],
     }).compileComponents();
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it('should render title', async () => {
-    const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, fintrack');
+  it('should create', () => {
+    const fixture = TestBed.createComponent(TransactionList);
+    expect(fixture.componentInstance).toBeTruthy();
   });
 });

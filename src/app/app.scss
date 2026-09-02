@@ -1,0 +1,16 @@
+// app.scss
+$sidebar-width: 250px;
+$mobile-header-height: 70px;
+
+.main-content {
+  margin-left: $sidebar-width;
+  padding: 30px;
+  transition: margin 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: calc(#{$mobile-header-height} + 20px) 20px 20px 20px;
+  }
+}

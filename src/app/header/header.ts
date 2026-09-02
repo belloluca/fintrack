@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',
 })
-export class Header {}
+export class Header {
+  readonly isOpen = signal(false);
+
+  toggleMenu(): void {
+    this.isOpen.update((curr) => !curr);
+  }
+
+  closeMenu(): void {
+    this.isOpen.set(false);
+  }
+}

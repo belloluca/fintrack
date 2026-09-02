@@ -1,3 +1,62 @@
-<header>
-  <p>ciao</p>
+<header class="header" [class.open]="isOpen()">
+  <button
+    type="button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isOpen()"
+    aria-controls="main-nav"
+    class="hamburger-btn"
+  >
+    Menu
+  </button>
+
+  <div class="logo">FinTrack</div>
+  <nav class="nav" id="main-nav" aria-label="Navigazione principale">
+    <ul (click)="closeMenu()">
+      <li>
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >HOME</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/dashboard']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >DASHBOARD</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/transactions']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >Lista delle transazioni</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/transactions/new']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >Aggiungi</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/budgets']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >Budget</a
+        >
+      </li>
+    </ul>
+  </nav>
 </header>

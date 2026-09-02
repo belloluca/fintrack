@@ -1,27 +1,5 @@
-<div>
-  <app-header></app-header>
-</div>
+<app-header></app-header>
 
-<nav>
-  <ul>
-    <li>
-      <a [routerLink]="['/']">HOME</a>
-    </li>
-    <li>
-      <a [routerLink]="['/dashboard']">DASHBOARD</a>
-    </li>
-    <li>
-      <a [routerLink]="['/transactions']">Lista delle transazioni</a>
-    </li>
-    <li>
-      <a [routerLink]="['/transactions/new']">Aggiungi</a>
-    </li>
-    <li>
-      <a [routerLink]="['/budgets']">Budget</a>
-    </li>
-  </ul>
-</nav>
-
-<main>
+<main class="main-content">
   <router-outlet></router-outlet>
 </main>

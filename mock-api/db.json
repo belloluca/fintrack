@@ -1,0 +1,116 @@
+{
+  "categories": [
+    { "id": 1, "type": "INCOME", "name": "Stipendio", "color": "#4CAF50", "icon": "wallet" },
+    { "id": 2, "type": "INCOME", "name": "Freelance", "color": "#2196F3", "icon": "laptop" },
+    { "id": 3, "type": "INCOME", "name": "Regali", "color": "#9C27B0", "icon": "gift" },
+    {
+      "id": 4,
+      "type": "INCOME",
+      "name": "Investimenti",
+      "color": "#00BCD4",
+      "icon": "trending-up"
+    },
+    {
+      "id": 5,
+      "type": "EXPENSE",
+      "name": "Spesa alimentare",
+      "color": "#FF9800",
+      "icon": "shopping-cart"
+    },
+    { "id": 6, "type": "EXPENSE", "name": "Trasporti", "color": "#795548", "icon": "car" },
+    { "id": 7, "type": "EXPENSE", "name": "Bollette", "color": "#F44336", "icon": "file-text" },
+    { "id": 8, "type": "EXPENSE", "name": "Svago", "color": "#E91E63", "icon": "film" },
+    { "id": 9, "type": "EXPENSE", "name": "Casa", "color": "#607D8B", "icon": "home" },
+    { "id": 10, "type": "EXPENSE", "name": "Salute", "color": "#8BC34A" }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Stipendio mensile",
+      "amount": 1800,
+      "type": "INCOME",
+      "categoryId": 1,
+      "date": "2026-08-01",
+      "createdAt": "2026-08-01T09:00:00.000Z",
+      "updatedAt": "2026-08-01T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "description": "Progetto freelance sito web",
+      "amount": 350,
+      "type": "INCOME",
+      "categoryId": 2,
+      "date": "2026-08-05",
+      "notes": "Saldo finale del progetto per il cliente Rossi",
+      "createdAt": "2026-08-05T14:30:00.000Z",
+      "updatedAt": "2026-08-05T14:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "description": "Spesa al supermercato",
+      "amount": 85.5,
+      "type": "EXPENSE",
+      "categoryId": 5,
+      "date": "2026-08-06",
+      "createdAt": "2026-08-06T18:15:00.000Z",
+      "updatedAt": "2026-08-06T18:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "description": "Rifornimento benzina",
+      "amount": 45,
+      "type": "EXPENSE",
+      "categoryId": 6,
+      "date": "2026-08-08",
+      "createdAt": "2026-08-08T08:45:00.000Z",
+      "updatedAt": "2026-08-08T08:45:00.000Z"
+    },
+    {
+      "id": 5,
+      "description": "Bolletta luce e gas",
+      "amount": 120,
+      "type": "EXPENSE",
+      "categoryId": 7,
+      "date": "2026-08-10",
+      "createdAt": "2026-08-10T10:00:00.000Z",
+      "updatedAt": "2026-08-10T10:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "description": "Cinema con amici",
+      "amount": 25,
+      "type": "EXPENSE",
+      "categoryId": 8,
+      "date": "2026-09-02",
+      "createdAt": "2026-09-02T21:00:00.000Z",
+      "updatedAt": "2026-09-02T21:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "description": "Regalo compleanno da parente",
+      "amount": 100,
+      "type": "INCOME",
+      "categoryId": 3,
+      "date": "2026-08-15",
+      "createdAt": "2026-08-15T12:00:00.000Z",
+      "updatedAt": "2026-08-15T12:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "description": "Affitto mensile",
+      "amount": 600,
+      "type": "EXPENSE",
+      "categoryId": 9,
+      "date": "2026-08-01",
+      "createdAt": "2026-08-01T09:05:00.000Z",
+      "updatedAt": "2026-08-01T09:05:00.000Z"
+    }
+  ],
+  "budgets": [
+    { "id": 1, "categoryId": 5, "amountLimit": 300, "month": 8, "year": 2026 },
+    { "id": 2, "categoryId": 6, "amountLimit": 100, "month": 8, "year": 2026 },
+    { "id": 3, "categoryId": 7, "amountLimit": 150, "month": 8, "year": 2026 },
+    { "id": 4, "categoryId": 8, "amountLimit": 80, "month": 8, "year": 2026 },
+    { "id": 5, "categoryId": 8, "amountLimit": 80, "month": 9, "year": 2026 }
+  ]
+}
